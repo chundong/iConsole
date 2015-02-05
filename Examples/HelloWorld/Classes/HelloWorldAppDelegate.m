@@ -15,6 +15,8 @@
 {
     _window = [[iConsoleWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 	_window.rootViewController = [[HelloWorldViewController alloc] init];
+    
+     [iConsole sharedConsole].bindObjects[@"ctl"] = _window.rootViewController;
     [_window makeKeyAndVisible];
 }
 

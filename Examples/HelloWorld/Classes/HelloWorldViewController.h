@@ -18,6 +18,7 @@
 
 - (IBAction)sayHello:(id)sender;
 - (IBAction)crash:(id)sender;
-
+- (void)hello;
+- (NSString*)world;
 @end
 

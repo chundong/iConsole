@@ -481,6 +481,8 @@ static void exceptionHandler(NSException *exception)
         self.textColor = [UIColor whiteColor];
         self.indicatorStyle = UIScrollViewIndicatorStyleWhite;
         
+        self.bindObjects = [[NSMutableDictionary alloc] initWithCapacity:10];
+        
         [[NSUserDefaults standardUserDefaults] synchronize];
         self.log = [NSMutableArray arrayWithArray:[[NSUserDefaults standardUserDefaults] objectForKey:@"iConsoleLog"]];
         
@@ -509,7 +511,7 @@ static void exceptionHandler(NSException *exception)
 	}
 	return self;
 }
-
+ 
 - (void)viewDidLoad
 {
     [super viewDidLoad];

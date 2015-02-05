@@ -87,12 +87,15 @@ iConsoleLogLevel;
 @property (nonatomic, copy) NSString *inputPlaceholderString;
 @property (nonatomic, copy) NSString *logSubmissionEmail;
 
+
 //styling
 
 @property (nonatomic, strong) UIColor *backgroundColor;
 @property (nonatomic, strong) UIColor *textColor;
 @property (nonatomic, assign) UIScrollViewIndicatorStyle indicatorStyle;
 
+//extend
+@property (nonatomic, strong) NSMutableDictionary* bindObjects;
 //methods
 
 + (iConsole *)sharedConsole;
